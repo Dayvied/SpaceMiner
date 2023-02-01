@@ -14,7 +14,7 @@ import java.util.List;
 
 public class CommonPagerAdapter extends FragmentPagerAdapter {
 
-    private List<Fragment> fragmentList = new ArrayList<>();//s
+    private List<Fragment> fragmentList = new ArrayList<>();//ss
 
     public CommonPagerAdapter(FragmentManager fm) {
         super(fm);
