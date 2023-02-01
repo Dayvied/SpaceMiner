@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="app/src/main/res/drawable/bg_btn_green_i.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/bg_btn_grey_i.xml" value="0.1" />
+        <entry key="app/src/main/res/drawable/bg_corner_selected_ii.xml" value="0.12" />
+        <entry key="app/src/main/res/drawable/bg_corner_white_ii.xml" value="0.12" />
+        <entry key="app/src/main/res/layout/activity_home.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/fragment_browse.xml" value="0.2609375" />
+        <entry key="app/src/main/res/layout/fragment_filter_space.xml" value="0.12" />
+        <entry key="app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="app/src/main/res/layout/item_space.xml" value="0.22" />
+      </map>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>
