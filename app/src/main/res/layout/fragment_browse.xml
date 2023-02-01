@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragment.browse.Browse"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/rl_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/side_space_i"
+            android:layout_marginTop="@dimen/side_space_i"
+            android:layout_marginBottom="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/side_space_i"
+            android:background="@drawable/bg_corner_white"
+            android:elevation="@dimen/_5sdp">
+
+            <ImageView
+                android:id="@+id/iv_search"
+                android:layout_width="@dimen/_22sdp"
+                android:layout_height="@dimen/_22sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:contentDescription="@null"
+                android:src="@drawable/ic_search" />
+
+            <TextView
+                android:id="@+id/tv_searchSpace"
+                style="@style/normalTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_toEndOf="@id/iv_search"
+                android:text="@string/search_space"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp" />
+
+            <TextView
+                android:id="@+id/tv_specific"
+                style="@style/normalTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_searchSpace"
+                android:layout_marginEnd="@dimen/_16sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:layout_toEndOf="@id/iv_search"
+                android:text="@string/location_size_duration_price"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp" />
+
+        </RelativeLayout>
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nsv_browse"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_search">
+
+            <RelativeLayout
+                android:id="@+id/rl_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rv_spaces"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/side_space_i"
+                    android:layout_marginEnd="@dimen/side_space_i"
+                    android:clipToPadding="false"
+                    android:paddingTop="@dimen/_15sdp"
+                    android:paddingBottom="@dimen/_50sdp" />
+
+                <TextView
+                    android:id="@+id/tv_noData"
+                    style="@style/normalTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/_60sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:textSize="@dimen/_13ssp"
+                    android:textColor="@color/black"
+                    android:text="@string/no_listing" />
+
+            </RelativeLayout>
+        </androidx.core.widget.NestedScrollView>
+    </RelativeLayout>
+</FrameLayout>

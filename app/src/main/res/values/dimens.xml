@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="side_space_i">@dimen/_25sdp</dimen>
+    <dimen name="padding_i">@dimen/_8sdp</dimen>
+    <dimen name="space0dp">0dp</dimen>
+
+</resources>
